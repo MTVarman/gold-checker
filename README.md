@@ -2,6 +2,8 @@
 
 Find the benchmark items whose gold answer disagrees with itself.
 
+**Live app:** https://gold-checker.streamlit.app
+
 Many numerical-reasoning benchmarks store two gold fields for every question: a **program** that
 computes the answer (`subtract(5829, 5735), divide(#0, 5735)`) and a **written answer** (`1.6%`).
 They are supposed to say the same thing. When they don't, at least one of them is wrong or the key
@@ -43,7 +45,8 @@ hand-confirmed error rates; the audit hand-checked a sample of them.
 
 ## Try it
 
-**In the browser:** `streamlit run streamlit_app.py`, then pick FinQA test in the sidebar. The app
+**In the browser:** open https://gold-checker.streamlit.app (or run `streamlit run streamlit_app.py`
+locally), then pick FinQA test in the sidebar. The app
 downloads the file from FinQA's own GitHub repository, checks it in about a second, and shows the
 counts, a chart of disagreement kinds, a filterable table of flagged items, a per-item view with the
 program and source table, and CSV / JSON / Markdown downloads. You can also upload your own file.
