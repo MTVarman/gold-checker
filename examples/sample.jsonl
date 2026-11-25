@@ -1,0 +1,10 @@
+{"id": "demo-01", "question": "By what percent did revenue grow from 2019 to 2020?", "program": "subtract(1350, 1200), divide(#0, 1200)", "answer": "12.5%"}
+{"id": "demo-02", "question": "By what percent did revenue grow from 2019 to 2020?", "program": "subtract(1200, 1350), divide(#0, 1200)", "answer": "12.5%"}
+{"id": "demo-03", "question": "What were total sales, in millions?", "program": "add(1200, 300)", "answer": "1.5"}
+{"id": "demo-04", "question": "What was the average order size?", "program": "divide(450, 3)", "answer": "160"}
+{"id": "demo-05", "question": "What was the change in costs?", "program": "subtract(420, 300)", "answer": ""}
+{"id": "demo-06", "question": "What was total revenue over the two years?", "program": "table_sum(revenue, none)", "answer": "2550", "table": [["", "2019", "2020"], ["revenue", "$ 1,200", "$ 1,350"], ["costs", "( 300 )", "( 420 )"]]}
+{"id": "demo-07", "question": "What was the margin?", "program": "divide(17, 2)", "answer": "8.5%"}
+{"id": "demo-08", "question": "Did revenue exceed costs in 2020?", "program": "greater(1350, 420)", "answer": "no"}
+{"id": "demo-09", "question": "What was revenue per store?", "program": "divide(1350, 0)", "answer": "12"}
+{"id": "demo-10", "question": "What share of revenue went to costs in 2020?", "program": "divide(420, 1350)", "answer": "31.1%"}

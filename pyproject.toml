@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gold-checker"
+version = "0.1.0"
+description = "Find benchmark items whose written gold answer disagrees with their own gold program"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "Michael T. Varman"}]
+keywords = ["benchmark", "evaluation", "llm-evals", "gold labels", "FinQA", "ConvFinQA", "data quality"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = []
+
+[project.optional-dependencies]
+app = ["streamlit>=1.50", "pandas"]
+test = ["pytest"]
+
+[project.scripts]
+gold-checker = "gold_checker.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["data: downloads the public FinQA/ConvFinQA files (skipped when offline)"]

@@ -1,0 +1,11 @@
+id,question,program,answer,table
+demo-01,By what percent did revenue grow from 2019 to 2020?,"subtract(1350, 1200), divide(#0, 1200)",12.5%,
+demo-02,By what percent did revenue grow from 2019 to 2020?,"subtract(1200, 1350), divide(#0, 1200)",12.5%,
+demo-03,"What were total sales, in millions?","add(1200, 300)",1.5,
+demo-04,What was the average order size?,"divide(450, 3)",160,
+demo-05,What was the change in costs?,"subtract(420, 300)",,
+demo-06,What was total revenue over the two years?,"table_sum(revenue, none)",2550,"[["""", ""2019"", ""2020""], [""revenue"", ""$ 1,200"", ""$ 1,350""], [""costs"", ""( 300 )"", ""( 420 )""]]"
+demo-07,What was the margin?,"divide(17, 2)",8.5%,
+demo-08,Did revenue exceed costs in 2020?,"greater(1350, 420)",no,
+demo-09,What was revenue per store?,"divide(1350, 0)",12,
+demo-10,What share of revenue went to costs in 2020?,"divide(420, 1350)",31.1%,
